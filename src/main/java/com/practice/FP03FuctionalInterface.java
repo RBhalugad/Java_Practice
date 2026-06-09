@@ -118,6 +118,7 @@ public class FP03FuctionalInterface {
         System.out.println("\nBiConsumer execution:");
         biConsumer.accept("Apple", 20);
 
+        // 9. BiFunction<T, U, R> - accepts two values and returns a result
         BiFunction<Integer, String, String> biFunction = new BiFunction<Integer, String, String>() {
 
             @Override
