@@ -13,9 +13,9 @@ public class FPStringoperation {
         System.out.println(fruits.stream().collect(Collectors.joining(" ")));
 
         // this will print string object address
-        System.out.println(fruits.stream().map(f -> f.split(" ")).collect(Collectors.toList()));
+        System.out.println(fruits.stream().map(f -> f.split(" ")).toList());
 
-        System.out.println(fruits.stream().map(f -> f.split(" ")).flatMap(Arrays::stream).collect(Collectors.toList()));
+        System.out.println(fruits.stream().map(f -> f.split(" ")).flatMap(Arrays::stream).toList());
 
     }
 

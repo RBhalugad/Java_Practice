@@ -11,7 +11,6 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
 import java.util.function.UnaryOperator;
-import java.util.stream.Collectors;
 
 public class FP03FuctionalInterface {
 
@@ -32,7 +31,7 @@ public class FP03FuctionalInterface {
         // filter even numbers
         List<Integer> evenNumbers = numbers.stream()
                 .filter(isEven)
-                .collect(Collectors.toList());
+                .toList();
 
         System.out.println("\nEven numbers: " + evenNumbers);
 

@@ -33,7 +33,7 @@ public class FP01Structured {
         numbers.stream().filter(num -> num % 2 == 0).map(num -> num * num).forEach(System.out::println);
 
         System.out.println("Sum of all numbers in the list:");
-        int sum = numbers.stream().reduce(0, (x, y) -> x + y);
+        int sum = numbers.stream().reduce(0, Integer::sum);
         System.out.println(sum);
 
     }

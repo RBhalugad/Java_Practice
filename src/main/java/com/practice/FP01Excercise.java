@@ -6,7 +6,7 @@ public class FP01Excercise {
     public static void main(String[] args) {
         List<String> courses = List.of("Spring", "Spring Boot", "API", "Microservices", "AWS", "PCF", "Azure", "Docker",
                 "Kubernetes");
-        courses.stream().forEach(course -> System.out.println(course));
+        courses.stream().forEach(System.out::println);
 
         System.out.println("Courses containing the word Spring:");
         courses.stream().filter(course -> course.contains("Spring")).forEach(System.out::println);
@@ -21,7 +21,7 @@ public class FP01Excercise {
         courses.stream().sorted().forEach(System.out::println);
 
         System.out.println("Print all courses length:");
-        courses.stream().map(course -> course.length()).forEach(System.out::println);
+        courses.stream().map(String::length).forEach(System.out::println);
 
     }
 
