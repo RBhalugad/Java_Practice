@@ -6,17 +6,16 @@ import java.util.stream.Collectors;
 
 public class FPStringoperation {
 
-    public static void main(String[] args) {
-        List<String> fruits = List.of("Apple", "Banana", "Cherry", "Date", "Elderberry", "Fig", "Grape");
+  public static void main(String[] args) {
+    List<String> fruits =
+        List.of("Apple", "Banana", "Cherry", "Date", "Elderberry", "Fig", "Grape");
 
-        // print the words separated by space
-        System.out.println(fruits.stream().collect(Collectors.joining(" ")));
+    // print the words separated by space
+    System.out.println(fruits.stream().collect(Collectors.joining(" ")));
 
-        // this will print string object address
-        System.out.println(fruits.stream().map(f -> f.split(" ")).toList());
+    // this will print string object address
+    System.out.println(fruits.stream().map(f -> f.split(" ")).toList());
 
-        System.out.println(fruits.stream().map(f -> f.split(" ")).flatMap(Arrays::stream).toList());
-
-    }
-
+    System.out.println(fruits.stream().map(f -> f.split(" ")).flatMap(Arrays::stream).toList());
+  }
 }
